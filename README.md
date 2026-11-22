@@ -1,4 +1,4 @@
-# 🛺 Rikshaw Rush — Karachi
+# 🛺 Local Sawari — Karachi
 
 A 3D endless runner in the browser. You drive a decorated Karachi auto-rickshaw through **Burns Road, Sea View, Kemari Harbour, Shahrah-e-Faisal and Mazar-e-Quaid**. Dodge traffic, cows and baraats, jump speed breakers and open manholes, carry passengers, race Chotu Ustad, and collect K-A-R-A-C-H-I.
 
@@ -32,7 +32,7 @@ For deployment (Vercel, Netlify, etc.), add the same variable in the host's envi
 ## Install as an app (PWA)
 
 The game installs to the home screen or desktop and works offline.
-- **Chrome / Edge / Android:** use the "Install Rikshaw Rush" card on the menu.
+- **Chrome / Edge / Android:** use the "Install Local Sawari" card on the menu.
 - **iPhone / iPad:** open the game in Safari, tap Share ⬆️, then "Add to Home Screen".
 
 ## Using your own Blender models
