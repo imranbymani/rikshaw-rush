@@ -160,7 +160,7 @@ function detectPlatform() {
 const INSTALL_STEPS = {
   ios: 'Safari mein <b>Share ⬆️</b> dabao, phir <b>Add to Home Screen ➕</b>.',
   android: 'Browser menu <b>⋮</b> kholo aur <b>Install app</b> (ya <b>Add to Home screen</b>) dabao.',
-  desktop: 'Address bar ke right mein <b>install icon 🖥️⬇</b> dabao, ya menu <b>⋯ → Apps → Install Rikshaw Rush</b>. (InPrivate/Incognito window mein install nahi hota.)',
+  desktop: 'Address bar ke right mein <b>install icon 🖥️⬇</b> dabao, ya menu <b>⋯ → Apps → Install Local Sawari</b>. (InPrivate/Incognito window mein install nahi hota.)',
   unsupported: 'Is browser mein install nahi hota. Computer pe <b>Chrome</b> ya <b>Edge</b>, ya iPhone pe <b>Safari</b> use karo.',
 };
 function initInstall() {
@@ -332,10 +332,10 @@ function revive() {
 }
 
 async function shareScore() {
-  const text = `🛺 Rikshaw Rush — Karachi! Mera score ${Math.floor(run.score).toLocaleString()} aur ${Math.floor(run.D).toLocaleString()} m. Tum beat kar sakte ho? 😎`;
+  const text = `🛺 Local Sawari — Karachi! Mera score ${Math.floor(run.score).toLocaleString()} aur ${Math.floor(run.D).toLocaleString()} m. Tum beat kar sakte ho? 😎`;
   const url = location.origin;
   try {
-    if (navigator.share) await navigator.share({ title: 'Rikshaw Rush', text, url });
+    if (navigator.share) await navigator.share({ title: 'Local Sawari', text, url });
     else { await navigator.clipboard.writeText(`${text} ${url}`); ui.toast('Score copy ho gaya — share karo! 📋', 1800); }
   } catch { /* cancelled */ }
 }
