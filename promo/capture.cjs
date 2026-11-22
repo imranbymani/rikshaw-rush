@@ -1,4 +1,4 @@
-// Scripted trailer capture for Rikshaw Rush.
+// Scripted trailer capture for Local Sawari.
 // Usage: node promo/capture.cjs <puppeteer-core dir> <url> <frames dir> [width height]
 // Virtualises time (rAF, performance.now, timers, CSS animations) so every frame is exactly 1/30 s apart.
 const path = require('path');
@@ -53,7 +53,7 @@ const SAVE = JSON.stringify({
   await p.setViewport({ width: W, height: H, deviceScaleFactor: 1 });
   p.on('pageerror', e => console.log('PAGEERROR', e.message));
   await p.evaluateOnNewDocument(CLOCK);
-  await p.evaluateOnNewDocument(`try { localStorage.setItem('rikshaw-rush-save-v1', ${JSON.stringify(SAVE)}); } catch {}`);
+  await p.evaluateOnNewDocument(`try { localStorage.setItem('local-sawari-save-v1', ${JSON.stringify(SAVE)}); } catch {}`);
   await p.goto(URL, { waitUntil: 'domcontentloaded' });
 
   // boot: step virtual time until the menu is up
@@ -91,10 +91,10 @@ const SAVE = JSON.stringify({
     document.head.appendChild(st);
     const d = document.createElement('div'); d.id = 'promo';
     d.innerHTML = `<div class="flash"></div>
-      <div class="card" id="pc-title"><div><h1>RIKSHAW <span>RUSH</span></h1><div class="ur">رکشہ رش · کراچی</div><p>A 3D Karachi street racer that runs right in your browser</p></div></div>
+      <div class="card" id="pc-title"><div><h1>LOCAL <span>SAWARI</span></h1><div class="ur">لوکل سواری · کراچی</div><p>A 3D Karachi street racer that runs right in your browser</p></div></div>
       <div class="cap" id="pc-cap"><b></b><small></small></div>
       <div class="card" id="pc-end"><div><h1 style="font-size:110px">PLAY FREE <span>→</span></h1>
-        <div class="url">rikshaw-rush.vercel.app</div>
+        <div class="url">localsawari.vercel.app</div>
         <div class="chips"><i>Three.js</i><i>GLSL</i><i>Web Audio</i><i>Blender</i><i>Clerk</i><i>PWA</i></div>
         <div class="by">Made in Pakistan 🇵🇰 · Muhammad Talha Khan</div></div></div>`;
     document.body.appendChild(d);
