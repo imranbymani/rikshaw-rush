@@ -1,5 +1,5 @@
 """
-Rikshaw Rush — Blender model builder.
+Local Sawari — Blender model builder.
 
 Builds the game's hero models from primitives with bevels, smooth shading and PBR materials,
 then exports each as .glb into public/models/ and writes models.json.
