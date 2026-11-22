@@ -1,5 +1,5 @@
 // Persistent player profile in localStorage (always wrapped in try/catch).
-const KEY = 'rikshaw-rush-save-v1';
+const KEY = 'local-sawari-save-v1';
 
 const DEFAULTS = () => ({
   coins: 0,
