@@ -2,7 +2,7 @@
 
 A 3D endless runner in the browser. You drive a decorated Karachi auto-rickshaw through **Burns Road, Sea View, Kemari Harbour, Shahrah-e-Faisal and Mazar-e-Quaid**. Dodge traffic, cows and baraats, jump speed breakers and open manholes, carry passengers, race Chotu Ustad, and collect K-A-R-A-C-H-I.
 
-**Made in Pakistan 🇵🇰 — Developer: [Muhammad Talha Khan](https://muhammadtalhakhan2003.github.io/PortFolio_Talha/)**
+**Made in Pakistan 🇵🇰**
 
 ---
 
